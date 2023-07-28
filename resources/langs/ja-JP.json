@@ -1,0 +1,74 @@
+{
+    "app_name": "Parasuke",
+    "common":{
+        "skip":"スキップ" ,
+        "continue":"Continue",
+        "cancel":"Cancel"
+    },
+    "sigh_in":{
+        "sign_in_with_phone_number":"電話番号でサインイン"
+    } ,
+
+    "onboarding_screen":{
+        "onboarding_txt1":"家族の予定や、複数のGooglelカレンダーを\u200B\n\u200B見やすくまとめる" , 
+        "onboarding_txt2" : "空いてるところが\u200B\n\u200Bすぐにわかる！" ,
+        "onboarding_txt3" : "A4、A3で印刷OK！\u200B\n\u200B手書きの予定からも\u200B\n\u200B同期できる！",
+        "get_started":"はじめる" ,
+        "skip":"スキップ"
+    } , 
+    "splash_screen":{
+        "parasuke" : "パラスケ"
+    } , 
+    "create_calender" : {
+        "step1" : "利⽤者設定", 
+        "step2" : "メンバー設定", 
+        "step3" : "利⽤開始",
+        "create" : "さっそく\u200B\n\u200Bカレンダーを作りましょう" , 
+        "your_name" : "お名前を教えてください" , 
+        "enter_name" : "お名前を⼊⼒してください",
+        "have_an_acount" : "Googleアカウントをお持ちですか？",
+        "have" : "持っている",
+        "donot_have":"持っていない"
+    } , 
+    "creation_completed" : {
+        "created" : "パラスケカレン ダーを 作成しました", 
+        "set_members" : "メンバーを設定する`" , 
+        "set_later" : "あとで設定する"
+    } , 
+    "add_member" : {
+        "set_member" : "２⼈⽬のメンバーを\u200B\n\u200B設定しましょう" ,
+        "have_an_acount" : "Gmailアドレスをお持ちですか？"
+
+    }, 
+    "invite_screen" : {
+        "lets_invite" : " さんを\u200B\n\u200B招待しましょう",
+        "gmail_address" : "Gmailメールアドレス" , 
+        "invite" :  "招待する",
+        "sent1" : "招待メールを送りました\u200B\n\u200B" , 
+        "sent2" : " さんが\u200B\n\u200B招待を受け⼊れたら\u200B\n\u200Bカレンダーに表⽰されます"
+    } ,
+    "sent_invite" : {
+        "set_next" : "次のメンバーを設定する",
+        "complete_setup" : "メンバー設定を完了する",
+        "note" : "※メンバー設定は後からでも追加設定できます"
+    }, 
+    "max_screen" : {
+        "max_invited1" : "最⼤⼈数",
+        "max_invited2" : "まで" , 
+        "max_invited3" : "メンバーを招待しました" , 
+        "if_accept" : "さんが\u200B\n\u200B招待を受け⼊れたら\u200B\n\u200Bカレンダーに表⽰されます",
+        "view" : "カレンダーをみる"
+    }, 
+    "make_google_screen" : {
+        "make" : "Googleアカウントを\u200B\n\u200B作りましょう", 
+        "required" : "パラスケをご利⽤いただくには\u200B\n\u200BGoogleアカウントが必要です" , 
+        "create" : "Googleアカウントをつくる"
+    }, 
+    "create_calendar_after_google_creation" : {
+        "create" : "さんの\u200B\n\u200Bカレンダーを作成しましょう", 
+        "using1" : "あなたのGoogleカレンダーを使って\u200B\n\u200B" , 
+        "using2" : "さんの\u200B\n\u200Bカレンダーを作成できます", 
+        "make" : "カレンダーをつくる" , 
+        "new_google" : "新しくGoogleアカウントを作りたい⽅はこちら"
+    }
+}

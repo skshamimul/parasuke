@@ -1,0 +1,135 @@
+name: parasuke_app
+description: Flutter theme demo using FlexColorScheme and Riverpod.
+publish_to: 'none'
+version: 0.9.5
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.7.0'
+
+dependencies:
+  # Used by Cupertino classes for iOS style icons (by Google, flutter.dev).
+  # https://pub.dev/packages/cupertino_icons
+  cupertino_icons: ^1.0.5
+
+  easy_localization: ^3.0.1
+
+  # Color picker package, by Mike Rydstrom, rydmike.com (@rydmike).
+  # https://pub.dev/packages/flex_color_picker
+  flex_color_picker: ^3.2.0
+
+  # Used for surface colored branded theming. (by rydmike.com)
+  # https://pub.dev/packages/flex_color_scheme
+  flex_color_scheme: ^7.0.1
+
+
+  # The Flutter framework (by Google, flutter.dev)
+  # https://flutter.dev
+  flutter:
+    sdk: flutter
+
+  # Riverpod, next generation version of Provider (by Remi Rousselet).
+  # https://pub.dev/packages/flutter_riverpod
+  flutter_riverpod: ^2.3.4
+
+  # Hive local storage, by Simon Leir.
+  # https://pub.dev/packages/hive
+  hive: ^2.2.3
+
+  # Commonly used directories on host platform file systems, by Google (flutter.dev).
+  # Used to get a working storage path for Hive on Windows.
+  # https://pub.dev/packages/path_provider
+  path_provider: ^2.0.14
+
+  # Store value pair shared preference data, by Google flutter.dev.
+  # https://pub.dev/packages/shared_preferences
+  shared_preferences: ^2.1.0
+
+  # Used for launching a WEB URL (by Google flutter.dev).
+  # https://pub.dev/packages/url_launcher
+  url_launcher: ^6.1.10
+  
+  
+  
+  get_it: ^7.2.0
+  http: ^0.13.5
+  auto_route: ^6.2.0
+
+  flutter_svg: ^2.0.5
+  carousel_slider: ^4.2.1
+  firebase_auth: ^4.7.0
+  google_sign_in: ^6.1.0
+
+  
+  camera: ^0.10.4
+  google_mlkit_text_recognition: ^0.6.0
+  permission_handler: ^10.2.0
+  # the annotation package containing @riverpod
+  riverpod_annotation: 2.1.1
+  cloud_firestore: ^4.8.3
+  equatable: ^2.0.5
+  firebase_storage: ^11.2.5
+  flutter_image_compress: ^1.1.3
+  image_cropper: ^3.0.3
+  image_picker: ^0.8.7+4
+  extension_google_sign_in_as_googleapis_auth: ^2.0.9
+  googleapis_auth: ^1.4.0
+  googleapis: ^11.0.0
+  cached_network_image: ^3.2.3
+  table_sticky_headers: ^2.0.5
+  calendar_view: ^1.0.3
+  path: ^1.8.2
+
+  image_eadge_detection:
+    path: ../image_eadge_detection/
+  google_vision: ^1.0.7+7
+  google_mlkit_language_id: ^0.6.0
+  flutter_form_builder: ^9.0.0
+  form_builder_validators: ^9.0.0
+  emoji_picker_flutter: ^1.5.4
+  form_builder_cupertino_fields: ^0.2.0
+  flutter_google_places_sdk: ^0.3.2+9
+  flutter_inappwebview: ^5.7.2+3
+  http_parser: ^4.0.2
+  json_view: ^0.4.1
+  in_app_purchase: ^3.1.7
+  in_app_purchase_android: ^0.3.0
+  in_app_purchase_storekit: ^0.3.4
+  printing: ^5.11.0
+  open_file: ^3.3.2
+
+  
+
+dev_dependencies:
+  build_runner: ^2.3.3
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+ 
+  freezed: ^2.3.2
+  
+  json_serializable: ^6.5.4
+  auto_route_generator: ^6.2.0
+  # the code generator
+  riverpod_generator: 2.2.1
+  
+  
+
+# The following section is specific to Flutter.
+flutter:
+  assets:
+    - assets/images/
+    - assets/svg/
+    - resources/langs/
+    - assets/my_jwt_credentials.json
+    - assets/young-man-smiling-and-thumbs-up.jpg
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # Custom icon font package with only needed and used icons.
+  fonts:
+    - family: FlexIcons
+      fonts:
+        - asset: assets/fonts/FlexIcons.ttf

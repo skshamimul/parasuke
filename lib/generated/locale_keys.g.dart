@@ -1,0 +1,63 @@
+// DO NOT EDIT. This is code generated via package:easy_localization/generate.dart
+
+abstract class  LocaleKeys {
+  static const app_name = 'app_name';
+  static const common_skip = 'common.skip';
+  static const common_continue = 'common.continue';
+  static const common_cancel = 'common.cancel';
+  static const common = 'common';
+  static const sigh_in_sign_in_with_phone_number = 'sigh_in.sign_in_with_phone_number';
+  static const sigh_in = 'sigh_in';
+  static const onboarding_screen_onboarding_txt1 = 'onboarding_screen.onboarding_txt1';
+  static const onboarding_screen_onboarding_txt2 = 'onboarding_screen.onboarding_txt2';
+  static const onboarding_screen_onboarding_txt3 = 'onboarding_screen.onboarding_txt3';
+  static const onboarding_screen_get_started = 'onboarding_screen.get_started';
+  static const onboarding_screen_skip = 'onboarding_screen.skip';
+  static const onboarding_screen = 'onboarding_screen';
+  static const splash_screen_parasuke = 'splash_screen.parasuke';
+  static const splash_screen = 'splash_screen';
+  static const create_calender_step1 = 'create_calender.step1';
+  static const create_calender_step2 = 'create_calender.step2';
+  static const create_calender_step3 = 'create_calender.step3';
+  static const create_calender_create = 'create_calender.create';
+  static const create_calender_your_name = 'create_calender.your_name';
+  static const create_calender_enter_name = 'create_calender.enter_name';
+  static const create_calender_have_an_acount = 'create_calender.have_an_acount';
+  static const create_calender_have = 'create_calender.have';
+  static const create_calender_donot_have = 'create_calender.donot_have';
+  static const create_calender = 'create_calender';
+  static const creation_completed_created = 'creation_completed.created';
+  static const creation_completed_set_members = 'creation_completed.set_members';
+  static const creation_completed_set_later = 'creation_completed.set_later';
+  static const creation_completed = 'creation_completed';
+  static const add_member_set_member = 'add_member.set_member';
+  static const add_member_have_an_acount = 'add_member.have_an_acount';
+  static const add_member = 'add_member';
+  static const invite_screen_lets_invite = 'invite_screen.lets_invite';
+  static const invite_screen_gmail_address = 'invite_screen.gmail_address';
+  static const invite_screen_invite = 'invite_screen.invite';
+  static const invite_screen_sent1 = 'invite_screen.sent1';
+  static const invite_screen_sent2 = 'invite_screen.sent2';
+  static const invite_screen = 'invite_screen';
+  static const sent_invite_set_next = 'sent_invite.set_next';
+  static const sent_invite_complete_setup = 'sent_invite.complete_setup';
+  static const sent_invite_note = 'sent_invite.note';
+  static const sent_invite = 'sent_invite';
+  static const max_screen_max_invited1 = 'max_screen.max_invited1';
+  static const max_screen_max_invited2 = 'max_screen.max_invited2';
+  static const max_screen_max_invited3 = 'max_screen.max_invited3';
+  static const max_screen_if_accept = 'max_screen.if_accept';
+  static const max_screen_view = 'max_screen.view';
+  static const max_screen = 'max_screen';
+  static const make_google_screen_make = 'make_google_screen.make';
+  static const make_google_screen_required = 'make_google_screen.required';
+  static const make_google_screen_create = 'make_google_screen.create';
+  static const make_google_screen = 'make_google_screen';
+  static const create_calendar_after_google_creation_create = 'create_calendar_after_google_creation.create';
+  static const create_calendar_after_google_creation_using1 = 'create_calendar_after_google_creation.using1';
+  static const create_calendar_after_google_creation_using2 = 'create_calendar_after_google_creation.using2';
+  static const create_calendar_after_google_creation_make = 'create_calendar_after_google_creation.make';
+  static const create_calendar_after_google_creation_new_google = 'create_calendar_after_google_creation.new_google';
+  static const create_calendar_after_google_creation = 'create_calendar_after_google_creation';
+
+}

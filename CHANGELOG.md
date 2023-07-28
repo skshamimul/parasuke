@@ -1,0 +1,114 @@
+# Changelog
+
+All notable changes to the **ThemeDemo** application are documented here.
+
+## 0.9.6
+
+**April 10, 2022**
+
+* Bump Flutter version to min 3.7.0
+* Bump all dependencies, now using FlexColorScheme 7.0.1
+* Remove material_design_icons_flutter package, use a custom small icon set instead.
+* Add an example of how to make a themed media device width dependent clamped Drawer width. 
+
+
+## 0.9.5
+
+**Nov 21, 2022**
+
+* Bump package version, most significantly FlexColorScheme to version 6.1.0.
+* Update `ThemeShowcase` to the one Themes Playground 6.1.0 uses.
+
+## 0.9.4
+
+**Nov 8, 2022**
+
+* Updates and fixes to `ThemeShowcase`.
+
+## 0.9.3
+
+**Oct 31, 2022**
+
+* FIX: Add missing usedFlexToneProvider.init() and .reset() to Settings.init and .reset.
+* UI design: ColorSchemeBox popup indicator now follows ToggleButtons theme radius and height.
+* Minor ThemeShowcase and slider widgets cleanup.
+* Readme and doc comments typo and language corrections.
+* Update web ThemeDemo app build to use Flutter 3.3.6.
+
+## 0.9.2
+
+**Oct 28, 2022**
+
+This version bump is an internal change to using `Notifier` instead of `StateNotifier` when possible. It also moves the counter `StateProvider` to `NotifierProvider` to make its code more expressive. Application functionality remains unchanged. This change uses the new Riverpod 2 `Notifier` and `NotifierProvider`.
+
+* Counter demo got a `Counter` model class that extends `Notifier` and it got an `increment` method. Its provider was changed StateProvider, to a `NotifierProvider`.
+* Changed `SettingsEntry` from extending `StateNotifier` to simpler `Notifier` class.
+* Changed all `Settings` providers from `StateNotifierProvider` to `NotifierProvider`.
+ 
+## 0.9.1
+
+**Oct 27-28, 2022**
+
+* Make theme selector button radius follow Card theme or its radius.
+* Cleanup of unused const values.
+* Fix comments on CI/CD.
+* Oct 28, 2022: Add this CHANGELOG.md file to start tracking changes to the ThemeDemo app.
+
+## 0.9.0
+
+**Oct 20-26, 2022**
+
+* Major refactor to FlexColorScheme v6.0.1 and Riverpod 2.0.1.
+* Oct 20, 2022: Refactor app to become a major demo of persisted themes using FlexColorScheme and Riverpod.
+* Oct 24, 2022: Add GitHub CI/CD and web demo publish action.
+* Oct 20-26, 20221: Write readme, that is also used as an article for the ThemeDemo app.
+* First mentioned version and article link Tweeted.
+* Update all Flutter runners.
+
+## 0.5.0
+
+**Apr 26, 2022**
+
+* Refactor to FlexColorScheme v5.0.0.
+* Bump minor dependency versions.
+* Update RydMike linter v1.2.5 -> v1.2.9 and fix new lints.
+* Update all Flutter runners.
+
+## 0.4.1
+
+**Apr 26, 2022**
+
+* Update to FlexColorScheme v4.1.1.
+
+## 0.4.0
+
+**Nov 14, 2022**
+
+* Reactor to FlexColorScheme v4.0.0.
+* Update to Riverpod 1.0.0.
+* Update RydMike linter v1.2.3 -> v1.2.5 and fix new lints.
+
+## 0.2.1
+
+**Sep 4-5, 2021**
+
+* Add more themes. 
+* Add custom sub-theming examples.
+* Add `ColoredText` example widget.
+
+## 0.2.0
+
+**Sep 2-4, 2021**
+
+* Linter fixes and upgrade.
+* Refactor from Riverpod 0.14.0+3 to 1.0.0-dev.7.
+* Add a Splash page and a Drawer.
+* Refactor the project to an example of FlexColorScheme v3.0.1 and Riverpod 1.0.0-dev.7.
+
+## 0.1.0+1 
+
+**Feb 2-13, 2021**
+
+* Initial commit.
+* A simple demo using ToggleButtons as a ThemeMode switch with StateProvider.
+* Feb 13, 2022: ThemeModeSwitch changed to a StatefulWidget, just as a demo.

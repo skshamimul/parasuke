@@ -1,0 +1,77 @@
+
+ 
+
+{
+    "app_name": "Parasuke",
+    "common":{
+        "skip":"Skip",
+        "continue":"Continue",
+        "cancel":"Cancel"
+    },
+    "sigh_in":{
+        "sign_in_with_phone_number":"Sign in with phone number"
+    },
+    "onboarding_screen":{
+        "onboarding_txt1":"Organize family schedules and multiple Google calendars for easy viewing" , 
+        "onboarding_txt2" : "You'll know immediately where there are vacancies!" ,
+        "onboarding_txt3" : "You can print on A4 or A3!\u200B\n\u200BYou can also synchronize from handwritten schedules!" ,
+        "get_started":"get started" ,
+        "skip":"Skip"
+    } , 
+    "splash_screen":{
+        "parasuke" : "Parasuke"
+    } , 
+
+    "create_calender" : {
+        "step1" : "Step 1", 
+        "step2" : "Step 2", 
+        "step3" : "Step 3",
+        "create" : "immediately make a calendar" , 
+        "your_name" : "Please tell me your name" , 
+        "enter_name" : "Please enter your name" , 
+        "have_an_acount" : "Do you have a Google account?",
+        "have" : "have",
+        "donot_have":"do not have"
+    } , 
+
+    "creation_completed" : {
+        "created" : "parasuke calendar created" , 
+        "set_members" : "set members",
+        "set_later" : "set later"
+    } , 
+    "add_member" : {
+        "set_member" : "Let's set a new member" , 
+        "have_an_acount" : "Do you have a Gmail address?"
+    } ,
+    "invite_screen" : {
+        "lets_invite" : " Mr. let's invite", 
+        "gmail_address" : "Gmail address",
+        "invite" : "invite" ,
+        "sent1" : "sent an invitation email\u200B\n\u200BMr. " , 
+        "sent2" : "if you accept the invitation\u200B\n\u200BShown in calendar"
+    } , 
+    "sent_invite" : {
+        "set_next" : "Set next member",
+        "complete_setup" : "Complete member setup",
+        "note" : "*Member settings can be added later."
+    } , 
+    "max_screen" : {
+        "max_invited1" : "Maximum",
+        "max_invited2" : " number" , 
+        "max_invited3" : " of invited members", 
+        "if_accept" : "If you accept the invitation shown in calendar",
+        "view" : "View calendar"
+    } , 
+    "make_google_screen" : {
+        "make" : "Let's make a Google account", 
+        "required" : "To use Parasuke Google account is required", 
+        "create" : "Create a Google account"
+    } , 
+    "create_calendar_after_google_creation" : {
+        "create" : " create your calendar", 
+        "using1" : "Using your Google calendar " , 
+        "using2" : " can create a calendar" , 
+        "make" : "make a calendar" , 
+        "new_google" : "Click here if you want to create a new Google account"
+    }
+}

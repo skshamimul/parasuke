@@ -1,0 +1,10 @@
+<svg id="bgPattern2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="415.657" height="360.795" viewBox="0 0 415.657 360.795">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1251" data-name="Rectangle 1251" width="415.657" height="360.795" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1440" data-name="Group 1440" clip-path="url(#clip-path)">
+    <path id="Path_901" data-name="Path 901" d="M53.765,343.264C10.578,316.691-47.874,193.955,67.23,128.013c33.024-18.919,87.506-14.827,109.56-38.321S195,34.525,249.455,9.131,342.638,15.61,352.438,52.1s44.77,26.646,59.881,53.222c13.82,24.306-19.453,54.115-23.99,83.5s12.919,69.149-25.069,95.194c-42.322,29.016-73.11-19.028-125.436,26.255C180,360.311,108.235,376.779,53.765,343.264" fill="#d0ebf2"/>
+  </g>
+</svg>

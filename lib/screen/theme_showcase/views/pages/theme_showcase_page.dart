@@ -1,0 +1,152 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:flex_color_scheme/flex_color_scheme.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+import '../../../../core/constants/app_insets.dart';
+import '../../../../core/views/widgets/universal/page_body.dart';
+import '../../../../theme/views/widgets/show_color_scheme_colors.dart';
+import '../../../../theme/views/widgets/show_sub_theme_colors.dart';
+import '../../../../theme/views/widgets/show_theme_data_colors.dart';
+import '../../../../theme/views/widgets/showcase_material.dart';
+import '../../../about/views/about.dart';
+
+/// This page is used show a page using the FlexColorScheme based theme's
+/// impact on commonly used Flutter Material UI Widgets.
+///
+/// The widgets and content on the page do not really do anything useful, other
+/// than show what they look like.
+@RoutePage<String>()
+class ThemeShowcaseScreen extends StatefulWidget {
+  const ThemeShowcaseScreen({super.key});
+
+  static const String route = '/themeshowcase';
+
+  @override
+  State<ThemeShowcaseScreen> createState() => _ThemeShowcasePageState();
+}
+
+class _ThemeShowcasePageState extends State<ThemeShowcaseScreen> {
+  int _buttonIndex = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    final ThemeData theme = Theme.of(context);
+    final TextTheme textTheme = theme.textTheme;
+    final TextStyle medium = textTheme.headlineMedium!;
+
+    final MediaQueryData media = MediaQuery.of(context);
+    final double topPadding = media.padding.top + kToolbarHeight * 2;
+    final double bottomPadding =
+        media.padding.bottom + kBottomNavigationBarHeight + AppInsets.l;
+
+    final bool isNarrow = media.size.width < AppInsets.phoneWidthBreakpoint;
+    final double sideMargin = isNarrow ? 0 : AppInsets.l;
+
+    return DefaultTabController(
+      length: 4,
+      child: Scaffold(
+        extendBodyBehindAppBar: true,
+        extendBody: true,
+        appBar: AppBar(
+          title: const Text('Theme Showcase'),
+          actions: const <Widget>[AboutIconButton()],
+          bottom: const TabBar(
+            tabs: <Widget>[
+              Tab(text: 'Home'),
+              Tab(text: 'Favorites'),
+              Tab(text: 'Profile'),
+              Tab(text: 'Settings'),
+            ],
+          ),
+        ),
+        //drawer: const AppDrawer(),
+        // This annotated region will change the Android system navigation bar
+        // to a theme color matching active FlexColorScheme theme.
+        body: AnnotatedRegion<SystemUiOverlayStyle>(
+          value: FlexColorScheme.themedSystemNavigationBar(context),
+          child: PageBody(
+            child: ListView(
+              primary: true,
+              padding: EdgeInsets.fromLTRB(
+                sideMargin,
+                topPadding,
+                sideMargin,
+                bottomPadding,
+              ),
+              children: <Widget>[
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: AppInsets.edge),
+                  child: Text('Theme Showcase', style: medium),
+                ),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: AppInsets.edge),
+                  child: Text(
+                    'Shows theme colors and the FlexColorScheme based theme '
+                    'applied on common widgets. '
+                    'It also has a NavigationBar and TabBar in the AppBar, '
+                    "to show what they look like, but they don't do anything.",
+                  ),
+                ),
+                const Divider(),
+                // Show all key active theme colors.
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('Colors', style: medium),
+                ),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: AppInsets.edge),
+                  child: ShowColorSchemeColors(),
+                ),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: AppInsets.edge),
+                  child: ShowThemeDataColors(),
+                ),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: AppInsets.edge),
+                  child: ShowSubThemeColors(),
+                ),
+                const Divider(),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: AppInsets.edge),
+                  child: Text('Showcase', style: medium),
+                ),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: AppInsets.edge),
+                  child: ShowcaseMaterial(),
+                ),
+              ],
+            ),
+          ),
+        ),
+        bottomNavigationBar: NavigationBar(
+          onDestinationSelected: (int value) {
+            setState(() {
+              _buttonIndex = value;
+            });
+          },
+          selectedIndex: _buttonIndex,
+          destinations: const <NavigationDestination>[
+            NavigationDestination(
+              icon: Icon(Icons.chat_bubble),
+              label: 'Chat',
+              tooltip: '',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.beenhere),
+              label: 'Tasks',
+              tooltip: '',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.create_new_folder),
+              label: 'Archive',
+              tooltip: '',
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

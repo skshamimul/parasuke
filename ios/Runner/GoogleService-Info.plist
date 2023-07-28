@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>647239140420-v4e2v9c6pbhubgp06ilheboecc7u7hjt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.647239140420-v4e2v9c6pbhubgp06ilheboecc7u7hjt</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>647239140420-b4ofsgbqd9oh9mdips0288a73h66q6h5.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyABTsZcjCnizzJNu_1x2kIWm8vXK9sc_s0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>647239140420</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>parasuke.app</string>
+	<key>PROJECT_ID</key>
+	<string>pasrasuke</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pasrasuke.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:647239140420:ios:b52060775cfd33adc0a811</string>
+</dict>
+</plist>
